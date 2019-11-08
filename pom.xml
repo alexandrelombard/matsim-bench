@@ -8,6 +8,10 @@
     <artifactId>matsim-bench</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <matsim.version>11.0</matsim.version>
+    </properties>
+
     <description>Evaluation of the possibilities of MATSim for C-ITS simulation</description>
 
     <repositories>
@@ -22,7 +26,12 @@
         <dependency>
             <groupId>org.matsim</groupId>
             <artifactId>matsim</artifactId>
-            <version>11.0</version>
+            <version>${matsim.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.matsim.contrib</groupId>
+            <artifactId>signals</artifactId>
+            <version>${matsim.version}</version>
         </dependency>
     </dependencies>
     
